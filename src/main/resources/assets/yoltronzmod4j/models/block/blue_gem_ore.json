@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "yoltronzmod4j:block/blue_gem_ore"
+  }
+}

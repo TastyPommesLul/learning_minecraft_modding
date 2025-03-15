@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "yoltronzmod4j",
+	"version": "${version}",
+	"name": "YoltronzMod4J",
+	"description": "Learning Fabric mod development with Java",
+	"authors": [
+		"TastyPommesLul"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/yoltronzmod4j/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tastypommeslul.YoltronzMod4J"
+		],
+		"fabric-datagen": [
+			"net.tastypommeslul.YoltronzMod4JDataGenerator"
+		],
+		"client": [
+			"net.tastypommeslul.YoltronzMod4JClient"
+		]
+	},
+	"mixins": [
+		"yoltronzmod4j.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
