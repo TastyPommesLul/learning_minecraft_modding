@@ -27,6 +27,16 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)).getSettings());
 
+    /// public static final Block BLUE_GEM_BLOCK = registerBlock("blue_gem_block",
+    ///             AbstractBlock.Settings.create().strength(4f)
+    ///                     .requiresTool().sounds(BlockSoundGroup.NETHERITE), RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_block")));
+    ///     public static final Block BLUE_GEM_ORE = registerBlock("blue_gem_ore",
+    ///             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+    ///                     AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)).getSettings(), RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_ore")));
+    ///     public static final Block BLUE_GEM_DEEPSLATE_ORE = registerBlock("blue_gem_deepslate_ore",
+    ///             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+    ///                     AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)).getSettings(), RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_deepslate_ore")));
+
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(YoltronzMod4J.MOD_ID, name));
@@ -36,6 +46,15 @@ public class ModBlocks {
         registerBlockItem(name, block, key);
         return block;
     }
+
+    /// private static Block registerBlock(String name, AbstractBlock.Settings blockSettings, RegistryKey<Block> key</Block>) {
+    ///         System.out.println("Registering block with key: " + key);
+    ///         Block block = new Block(blockSettings.registryKey(key));
+    ///         Registry.register(Registries.BLOCK, key, block);
+    ///         registerBlockItem(name, block, key);
+    ///         return block;
+    ///     }
+
 
     private static void registerBlockItem(String name, Block block, RegistryKey<Block> key) {
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(YoltronzMod4J.MOD_ID, name));
