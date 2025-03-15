@@ -26,12 +26,12 @@ public class ModItemGroups {
     public static final ItemGroup BLUE_GEM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_blocks"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModBlocks.BLUE_GEM_ORE))
+                    .icon(() -> new ItemStack(ModBlocks.BLUE_GEM_BLOCK))
                     .displayName(Text.translatable("itemgroup.yoltronzmod4j.blue_gem_blocks"))
                     .entries((displayContext, entries) -> {
-//                        entries.add(ModBlocks.BLUE_GEM_BLOCK);
+                        entries.add(ModBlocks.BLUE_GEM_BLOCK);
                         entries.add(ModBlocks.BLUE_GEM_ORE);
-//                        entries.add(ModBlocks.BLUE_GEM_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.BLUE_GEM_DEEPSLATE_ORE);
                     }).build());
 
     public static void registerModItemGroups() {

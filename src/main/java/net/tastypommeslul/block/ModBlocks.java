@@ -17,15 +17,15 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.tastypommeslul.YoltronzMod4J;
 
 public class ModBlocks {
-//    public static final Block BLUE_GEM_BLOCK = registerBlock("blue_gem_block",
-//            AbstractBlock.Settings.create().strength(4f)
-//                    .requiresTool().sounds(BlockSoundGroup.NETHERITE));
+    public static final Block BLUE_GEM_BLOCK = registerBlock("blue_gem_block",
+            AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.NETHERITE));
     public static final Block BLUE_GEM_ORE = registerBlock("blue_gem_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)).getSettings());
-//    public static final Block BLUE_GEM_DEEPSLATE_ORE = registerBlock("blue_gem_deepslate_ore",
-//            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
-//                    AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)).getSettings());
+    public static final Block BLUE_GEM_DEEPSLATE_ORE = registerBlock("blue_gem_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)).getSettings());
 
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
@@ -33,7 +33,7 @@ public class ModBlocks {
         System.out.println("Registering block with key: " + key);
         Block block = new Block(blockSettings.registryKey(key));
         Registry.register(Registries.BLOCK, key, block);
-        registerBlockItem(name, block, key); // Pass the RegistryKey object
+        registerBlockItem(name, block, key);
         return block;
     }
 
@@ -48,9 +48,9 @@ public class ModBlocks {
         YoltronzMod4J.LOGGER.info("Registering Mod Blocks for " + YoltronzMod4J.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-//            entries.add(BLUE_GEM_BLOCK);
+            entries.add(BLUE_GEM_BLOCK);
             entries.add(BLUE_GEM_ORE);
-//            entries.add(BLUE_GEM_DEEPSLATE_ORE);
+            entries.add(BLUE_GEM_DEEPSLATE_ORE);
         });
     }
 }
