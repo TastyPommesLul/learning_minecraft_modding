@@ -26,6 +26,9 @@ public class ModItems {
             new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER, ModConsumableComponents.CAULIFLOWER)
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(YoltronzMod4J.MOD_ID, "cauliflower")))));
 
+    public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(YoltronzMod4J.MOD_ID, name), item);
     }

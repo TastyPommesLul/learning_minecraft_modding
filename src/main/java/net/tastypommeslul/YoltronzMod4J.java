@@ -2,6 +2,7 @@ package net.tastypommeslul;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.tastypommeslul.block.ModBlocks;
 import net.tastypommeslul.item.ModItemGroups;
 import net.tastypommeslul.item.ModItems;
@@ -9,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class YoltronzMod4J implements ModInitializer {
-	// helicopters are not just flying things >:(
 	public static final String MOD_ID = "yoltronzmod4j";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
@@ -20,5 +20,9 @@ public class YoltronzMod4J implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistryEvents.BUILD.register(((builder, context) -> {
+			builder.add(ModItems.STARLIGHT_ASHES, context.baseSmeltTime() / 4);
+		}));
 	}
 }
