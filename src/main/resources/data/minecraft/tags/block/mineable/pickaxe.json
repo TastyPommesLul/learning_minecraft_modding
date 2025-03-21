@@ -3,6 +3,7 @@
   "values": [
     "yoltronzmod4j:blue_gem_block",
     "yoltronzmod4j:blue_gem_ore",
-    "yoltronzmod4j:blue_gem_deepslate_ore"
+    "yoltronzmod4j:blue_gem_deepslate_ore",
+    "yoltronzmod4j:instant_smelt_block"
   ]
 }

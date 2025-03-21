@@ -10,9 +10,6 @@ import net.minecraft.util.Identifier;
 import net.tastypommeslul.YoltronzMod4J;
 import net.tastypommeslul.block.ModBlocks;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
 public class ModItemGroups {
     public static final ItemGroup BLUE_GEM_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_items"),
@@ -22,6 +19,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BLUE_GEM);
                         entries.add(ModItems.RAW_BLUE_GEM);
+
+                        entries.add(ModItems.TEST_ITEM);
                     }).build());
     public static final ItemGroup BLUE_GEM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_blocks"),
@@ -32,6 +31,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLUE_GEM_BLOCK);
                         entries.add(ModBlocks.BLUE_GEM_ORE);
                         entries.add(ModBlocks.BLUE_GEM_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.INSTANT_SMELT_BLOCK);
+                    }).build());
+    public static final ItemGroup YOLTRONZ4J_UTILITY = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(YoltronzMod4J.MOD_ID, "yoltronz4j_utility"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModBlocks.BLUE_GEM_BLOCK))
+                    .displayName(Text.translatable("itemgroup.yoltronzmod4j.utility"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.CAULIFLOWER);
+
                     }).build());
 
     public static void registerModItemGroups() {

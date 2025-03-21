@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "yoltronzmod4j:item/cauliflower"
+  }
+}

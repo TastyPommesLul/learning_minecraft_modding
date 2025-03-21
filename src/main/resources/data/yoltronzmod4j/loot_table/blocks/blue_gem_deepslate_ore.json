@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "tutorialmod:blue_gem_deepslate_ore"
+              "name": "yoltronzmod4j:blue_gem_deepslate_ore"
             },
             {
               "type": "minecraft:item",
@@ -49,7 +49,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "tutorialmod:raw_blue_gem"
+              "name": "yoltronzmod4j:raw_blue_gem"
             }
           ]
         }
