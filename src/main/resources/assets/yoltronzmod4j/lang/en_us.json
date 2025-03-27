@@ -1,16 +1,26 @@
 {
   "item.yoltronzmod4j.blue_gem": "Blue Gem",
   "item.yoltronzmod4j.raw_blue_gem": "Raw Blue Gem",
-  "item.yoltronzmod4j.test_item": "Test (Advanced) Item",
+  "item.yoltronzmod4j.starlight_ashes": "Starlight Ashes",
+
   "item.yoltronzmod4j.cauliflower": "Cauliflower",
+  "tooltip.yoltronzmod4j.cauliflower.regeneration": "§c+10 seconds regeneration§r",
+
+  "item.yoltronzmod4j.test_item": "Test Item",
+  "tooltip.yoltronzmod4j.test_item.shift": "Transforms blocks into their brick variant",
+  "tooltip.yoltronzmod4j.test_item": "Press §eShift§r to see more info",
+
 
   "block.yoltronzmod4j.blue_gem_block": "Blue Gem Block",
   "block.yoltronzmod4j.blue_gem_ore": "Blue Gem Ore",
   "block.yoltronzmod4j.blue_gem_deepslate_ore": "Blue Gem Deepslate Ore",
+
   "block.yoltronzmod4j.instant_smelt_block": "Instant Smelting Block",
+  "tooltip.yoltronzmod4j.instant_smelt_block": "§lSmelts §1§l§o§nRaw Blue Gems§r§l instantly",
 
 
   "itemgroup.yoltronzmod4j.blue_gem_items": "Blue Gem Items",
   "itemgroup.yoltronzmod4j.blue_gem_blocks": "Blue Gem Blocks",
-  "itemgroup.yoltronzmod4j.utility": "Utility"
+  "itemgroup.yoltronzmod4j.utility": "Utility",
+  "transformable_items.yoltronzmod4j": "Transformable Items"
 }

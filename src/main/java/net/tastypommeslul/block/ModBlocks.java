@@ -21,7 +21,7 @@ import net.tastypommeslul.block.custom.InstantSmeltBlock;
 public class ModBlocks {
     public static final Block BLUE_GEM_BLOCK = registerBlock("blue_gem_block",
             new Block(AbstractBlock.Settings.create().strength(5f)
-                    .requiresTool().sounds(BlockSoundGroup.NETHERITE)
+                    .requiresTool().sounds(BlockSoundGroup.METAL)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_block")))));
 
     public static final Block BLUE_GEM_ORE = registerBlock("blue_gem_ore",

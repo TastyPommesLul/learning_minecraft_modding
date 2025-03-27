@@ -1,0 +1,5 @@
+// 1.21.4	-999999999-01-01T00:00:00	YoltronzMod4J/Block Loot Tables
+55d4caa59308f514fb0eada5d73cc48a114f1bd6 data/yoltronzmod4j/loot_table/blocks/blue_gem_block.json
+5a58e2024b74f18e528ec916c8c18714f16a7f38 data/yoltronzmod4j/loot_table/blocks/blue_gem_deepslate_ore.json
+88dfd2730f9e55bc4c71bafa4d3a74e3e4b901b8 data/yoltronzmod4j/loot_table/blocks/blue_gem_ore.json
+76bee064da5f2ef0e8bb446177549f1d7ed1dba8 data/yoltronzmod4j/loot_table/blocks/instant_smelt_block.json

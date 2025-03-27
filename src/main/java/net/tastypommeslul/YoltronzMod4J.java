@@ -22,7 +22,7 @@ public class YoltronzMod4J implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		FuelRegistryEvents.BUILD.register(((builder, context) -> {
-			builder.add(ModItems.STARLIGHT_ASHES, context.baseSmeltTime() / 4);
+			builder.add(ModItems.STARLIGHT_ASHES, 8800 /* 16k (coal) + 9600 (blazerod * 4) / 2 (average) */);
 		}));
 	}
 }

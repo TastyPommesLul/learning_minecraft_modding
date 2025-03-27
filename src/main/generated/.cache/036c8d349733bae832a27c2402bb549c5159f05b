@@ -1,0 +1,4 @@
+// 1.21.4	-999999999-01-01T00:00:00	YoltronzMod4J/Tags for minecraft:block
+47aab78f2a951e33cfcbd5372733c7455c4eb797 data/minecraft/tags/block/mineable/pickaxe.json
+a887e7d4872c7c5cf3740a38535df39212606a19 data/minecraft/tags/block/needs_diamond_tool.json
+f2c874af18e96fdb3901ff3769a455a257a06893 data/minecraft/tags/block/needs_iron_tool.json

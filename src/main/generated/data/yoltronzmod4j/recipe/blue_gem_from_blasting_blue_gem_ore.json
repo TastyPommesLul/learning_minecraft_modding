@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "blue_gem",
+  "ingredient": "yoltronzmod4j:blue_gem_ore",
+  "result": {
+    "id": "yoltronzmod4j:blue_gem"
+  }
+}

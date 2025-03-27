@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "blue_gem",
+  "ingredient": "yoltronzmod4j:raw_blue_gem",
+  "result": {
+    "id": "yoltronzmod4j:blue_gem"
+  }
+}

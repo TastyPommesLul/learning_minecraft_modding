@@ -20,10 +20,9 @@ public class ModItemGroups {
                         entries.add(ModItems.BLUE_GEM);
                         entries.add(ModItems.RAW_BLUE_GEM);
 
-                        entries.add(ModItems.TEST_ITEM);
                     }).build());
     public static final ItemGroup BLUE_GEM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_blocks"),
+            Identifier.of(YoltronzMod4J.MOD_ID, "blue_gem_blocks_"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModBlocks.BLUE_GEM_BLOCK))
                     .displayName(Text.translatable("itemgroup.yoltronzmod4j.blue_gem_blocks"))
@@ -36,10 +35,12 @@ public class ModItemGroups {
     public static final ItemGroup YOLTRONZ4J_UTILITY = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(YoltronzMod4J.MOD_ID, "yoltronz4j_utility"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModBlocks.BLUE_GEM_BLOCK))
+                    .icon(() -> new ItemStack(ModItems.TEST_ITEM))
                     .displayName(Text.translatable("itemgroup.yoltronzmod4j.utility"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.STARLIGHT_ASHES);
+                        entries.add(ModItems.TEST_ITEM);
 
                     }).build());
 
